@@ -7,8 +7,8 @@
 - [ ] 스킬
 - [ ] 포트폴리오 라우터 세개
 
-# gyumtube 라우터
+- [ ] gyumtube 라우터
 
-# devflix 라우터
+- [ ] devflix 라우터
 
-# cocoaClone 라우터
+- [ ] cocoaClone 라우터
