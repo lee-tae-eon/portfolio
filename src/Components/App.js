@@ -1,12 +1,13 @@
 import React from "react";
-import { HashRouter as Router, Route } from "react-router-dom";
-import Home from "Routes/Home";
+import GlobalStyles from "./GlobalStyles";
+import Hrouter from "./Router";
 
 const App = () => {
   return (
-    <Router>
-      <Route path="/" component={Home} />
-    </Router>
+    <>
+      <Hrouter />
+      <GlobalStyles />
+    </>
   );
 };
 
