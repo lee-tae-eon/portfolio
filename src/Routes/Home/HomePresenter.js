@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import TitleNeon from "../../Components/animation/TitleNeon";
 
 const Container = styled.div`
   font-size: 32px;
@@ -14,6 +15,7 @@ const Container = styled.div`
     font-size: 40px;
     font-weight: 800;
     margin-bottom: 40px;
+    animation: ${TitleNeon} 3s ease infinite;
   }
   p {
     line-height: 40px;

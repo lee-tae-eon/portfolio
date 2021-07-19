@@ -46,7 +46,9 @@ const Navigation = withRouter(() => {
         <Item>
           <PLink to="/profile">PROFILE</PLink>
         </Item>
-        <Item>STACK</Item>
+        <Item>
+          <PLink to="/stack">STACKS</PLink>
+        </Item>
         <Item>PORTFOLIO</Item>
         <Item>CONTACT</Item>
       </List>
