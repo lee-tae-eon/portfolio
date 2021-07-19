@@ -11,12 +11,9 @@ const GlobalStyles = createGlobalStyle`
     color: inherit;
   }
   body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Mukta', sans-serif;;
     font-size: 16px;
-    height: 1000vh;
-  }
-  #root {
-    height: 1000vh;
+    background-color: #EAEAE9;
   }
 `;
 

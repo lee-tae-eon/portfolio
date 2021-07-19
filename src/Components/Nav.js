@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import styled from "styled-components";
 
@@ -37,7 +37,6 @@ const Item = styled.li`
 const PLink = styled(Link)``;
 
 const Navigation = withRouter(() => {
-  const [Scroll, cbScroll] = useState(0);
   return (
     <Navbar>
       <List>

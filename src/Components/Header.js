@@ -1,5 +1,4 @@
 import React from "react";
-import ProfileImage from "../static/Image/profile.jpeg";
 import styled from "styled-components";
 
 const Container = styled.header`
@@ -17,12 +16,13 @@ const Centence = styled.div`
     z-index: 3;
   }
   p {
-    font-size: 60px;
+    font-size: 160px;
     position: absolute;
     top: 70px;
     left: 30%;
-    opacity: 0.3;
-    text-shadow: rgba(0, 0, 0, 0.8) 1px 0 10px;
+    opacity: 0.2;
+    text-shadow: rgba(0, 0, 0, 1) 1px 0 10px;
+    font-weight: bolder;
   }
 `;
 
@@ -31,7 +31,9 @@ const Header = () => {
     <Container>
       <Centence>
         <h1>FullStack Developer를 꿈꾸는..</h1>
-        <p>JavaScript Developer</p>
+        <p>
+          JavaScript <br /> Developer
+        </p>
       </Centence>
     </Container>
   );
