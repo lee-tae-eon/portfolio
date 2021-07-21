@@ -30,7 +30,7 @@ export const StacksInfo = [
   {
     id: 4,
     title: "MongoDB",
-    logo: "https://d1telmomo28umc.cloudfront.net/media/public/badges/Pug_TAaOtzg.png",
+    logo: "https://d1telmomo28umc.cloudfront.net/media/public/badges/MongoDB_eI4tP6i.png",
     Useful:
       "NoSql인 MongoDB를 Mongoose를 사용해 Express로 프레임워크 구축시 활용가능합니다. 현재 진행중인 사이드프로젝트에서 지속적으로 활용하고 있습니다. ",
   },

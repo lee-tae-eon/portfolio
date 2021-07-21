@@ -31,26 +31,35 @@ const Container = styled.section`
   box-shadow: 0px 24px 48px 0 rgba(0, 0, 0, 0.16);
   padding: 20px 40px;
   text-align: center;
-  background: linear-gradient(40deg, #cdcdcb, rgba(50, 50, 50, 0.5));
+  background: linear-gradient(
+    80deg,
+    #cdcdcb,
+    rgba(100, 100, 100, 0.5),
+    #cdcdcb
+  );
 `;
 
 const StackInfo = styled.div`
   width: 400px;
   justify-self: center;
   align-self: center;
-  .stack--git-github {
-    border-radius: 50%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 20px 0;
   }
 `;
 
 const Logo = styled.img`
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 `;
 
 const Stack = () => {
   let [Stacks, cbStack] = useState(StacksInfo);
-  console.log(Stacks);
 
   return (
     <>
