@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
-import { BgColor } from "./_Cssvariable";
+import { BgColor, OswaldFont } from "./_Cssvariable";
 
 const GlobalStyles = createGlobalStyle`
   ${reset};
@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     ${BgColor}
-    font-family: 'Mukta', sans-serif;;
+    ${OswaldFont}
     font-size: 16px;
     color: white;
   }

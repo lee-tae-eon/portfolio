@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import TitleNeon from "./animation/TitleNeon";
-import { OswaldFont } from "./_Cssvariable";
 
 const Title = styled.h1`
   max-width: 600px;
@@ -26,7 +25,6 @@ const Container = styled.section`
   padding: 20px 40px;
   display: flex;
   text-align: center;
-  ${OswaldFont}
 `;
 
 const List = styled.ul`

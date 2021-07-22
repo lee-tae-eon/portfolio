@@ -5,7 +5,7 @@ import mainBack from "../static/Image/MainBack/mainBack.jpeg";
 
 const Container = styled.header`
   width: 100%;
-  height: 70vh;
+  height: 75vh;
   position: relative;
   background-image: url(${mainBack});
   background-size: cover;
@@ -17,7 +17,7 @@ const Centence = styled.div`
     font-size: 40px;
     position: absolute;
     top: 50px;
-    left: 20%;
+    right: 20%;
     z-index: 3;
     color: #aeafb0;
     text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px black,
@@ -28,9 +28,9 @@ const Centence = styled.div`
     font-size: 160px;
     position: absolute;
     top: 70px;
-    left: 30%;
-    opacity: 0.2;
-    text-shadow: rgba(255, 255, 255, 1) 2px 2px 20px;
+    right: 20%;
+    opacity: 0.5;
+    text-shadow: rgba(0, 0, 0, 1) 2px 2px 20px;
     font-weight: bolder;
   }
 `;
@@ -39,7 +39,7 @@ const Header = () => {
   return (
     <Container>
       <Centence>
-        <h1>FullStack Developer를 꿈꾸는..</h1>
+        <h1>도전과 모험을 즐기는</h1>
         <p>
           JavaScript <br /> Developer
         </p>

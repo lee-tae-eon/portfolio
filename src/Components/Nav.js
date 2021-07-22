@@ -35,10 +35,6 @@ const Item = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
-  &:first-child {
-    font-size: 42px;
-    font-weight: 900;
-  }
 `;
 
 const PLink = styled(Link)``;
@@ -48,7 +44,7 @@ const Navigation = withRouter(({ location: { pathname } }) => {
     <Navbar>
       <List>
         <Item current={pathname === "/"}>
-          <Link to="/">Lee Tae Eon</Link>
+          <Link to="/">LEETAEEON</Link>
         </Item>
         <Item current={pathname === "/profile"}>
           <PLink to="/profile">PROFILE</PLink>
