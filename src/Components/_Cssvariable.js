@@ -5,5 +5,5 @@ export const OswaldFont = css`
 `;
 
 export const BgColor = css`
-  background-color: #262926;
+  background-color: #131313;
 `;

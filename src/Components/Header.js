@@ -1,11 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import HeaderNeon from "./animation/HeaderNeon";
+import mainBack from "../static/Image/MainBack/mainBack.jpeg";
 
 const Container = styled.header`
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   position: relative;
+  background-image: url(${mainBack});
+  background-size: cover;
+  background-position: center center;
 `;
 
 const Centence = styled.div`
