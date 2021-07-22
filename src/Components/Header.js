@@ -15,10 +15,10 @@ const Centence = styled.div`
     top: 50px;
     left: 20%;
     z-index: 3;
-    color: #fff;
-    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-      0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
-    animation: ${HeaderNeon} 2s infinite alternate;
+    color: #aeafb0;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px black,
+      0 0 82px black, 0 0 92px black, 0 0 102px black, 0 0 151px black;
+    animation: ${HeaderNeon} 4s infinite linear;
   }
   p {
     font-size: 160px;
@@ -26,7 +26,7 @@ const Centence = styled.div`
     top: 70px;
     left: 30%;
     opacity: 0.2;
-    text-shadow: rgba(0, 0, 0, 1) 1px 0 10px;
+    text-shadow: rgba(255, 255, 255, 1) 2px 2px 20px;
     font-weight: bolder;
   }
 `;

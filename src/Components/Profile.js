@@ -1,22 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import TitleNeon from "./animation/TitleNeon";
-
-const Container = styled.section`
-  max-width: 1400px;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  margin-top: 60px;
-  margin-bottom: 50px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 24px 48px 0 rgba(0, 0, 0, 0.16);
-  padding: 20px 40px;
-  display: flex;
-  text-align: center;
-  background: linear-gradient(40deg, #cdcdcb, rgba(50, 50, 50, 0.5));
-`;
+import { OswaldFont } from "./_Cssvariable";
 
 const Title = styled.h1`
   max-width: 600px;
@@ -30,12 +15,28 @@ const Title = styled.h1`
   border-radius: 5px;
   animation: ${TitleNeon} 3s ease infinite;
 `;
+const Container = styled.section`
+  max-width: 1400px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  display: flex;
+  text-align: center;
+  ${OswaldFont}
+`;
 
 const List = styled.ul`
   padding: 20px;
   font-size: 22px;
   display: flex;
-  flex-direction: column; ;
+  flex-direction: column;
+  hr {
+    width: 100%;
+  }
 `;
 
 const Item = styled.li`
@@ -49,14 +50,12 @@ const Item = styled.li`
 const ItemTitle = styled.h3`
   width: 20%;
   font-size: 32px;
-  color: #939590;
   font-weight: bold;
   margin-right: 20px;
 `;
 
 const ItemContent = styled.p`
   width: 80%;
-  color: rgba(220, 220, 220, 1);
   line-height: 30px;
   letter-spacing: 2px;
   strong {
@@ -79,6 +78,7 @@ const Profile = () => {
               개발자입니다.
             </ItemContent>
           </Item>
+          <hr></hr>
           <Item>
             <ItemTitle>Education </ItemTitle>
             <ItemContent>
@@ -86,6 +86,7 @@ const Profile = () => {
               상명대학교 중퇴자
             </ItemContent>
           </Item>
+          <hr></hr>
           <Item>
             <ItemTitle>Career </ItemTitle>
             <ItemContent>
@@ -96,6 +97,7 @@ const Profile = () => {
               독학하였습니다. (ps. 다른 사회 경험은 풍부하다고 생각합니다.)
             </ItemContent>
           </Item>
+          <hr></hr>
           <Item>
             <ItemTitle>Goals as a developer </ItemTitle>
             <ItemContent>

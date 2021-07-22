@@ -26,17 +26,8 @@ const Container = styled.section`
   margin: auto;
   margin-top: 60px;
   margin-bottom: 50px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 24px 48px 0 rgba(0, 0, 0, 0.16);
   padding: 20px 40px;
   text-align: center;
-  background: linear-gradient(
-    80deg,
-    #cdcdcb,
-    rgba(100, 100, 100, 0.5),
-    #cdcdcb
-  );
 `;
 
 const StackInfo = styled.div`

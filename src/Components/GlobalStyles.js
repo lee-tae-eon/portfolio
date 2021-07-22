@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
+import { BgColor } from "./_Cssvariable";
 
 const GlobalStyles = createGlobalStyle`
   ${reset};
@@ -11,9 +12,10 @@ const GlobalStyles = createGlobalStyle`
     color: inherit;
   }
   body {
+    ${BgColor}
     font-family: 'Mukta', sans-serif;;
     font-size: 16px;
-    background-color: #EAEAE9;
+    color: white;
   }
 `;
 

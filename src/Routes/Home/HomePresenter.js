@@ -18,12 +18,14 @@ const Container = styled.div`
     animation: ${TitleNeon} 3s ease infinite;
   }
   p {
-    line-height: 40px;
+    line-height: 50px;
     letter-spacing: 2px;
-    color: rgba(20, 20, 20, 0.5);
+    color: #c7cdd4;
+    font-weight: 300;
     strong {
-      color: black;
-      font-weight: bold;
+      font-size: 40px;
+      color: #7890ad;
+      font-weight: 900;
     }
   }
 `;
