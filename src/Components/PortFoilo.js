@@ -16,26 +16,35 @@ const Container = styled.div`
 `;
 
 const List = styled.ul`
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 `;
 
 const Item = styled.li`
+  width: 1000px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
   font-size: 30px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  p {
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+  }
   &:hover {
     font-size: 50px;
+    p {
+      font-size: 40px;
+    }
   }
   h3 {
-    width: 300px;
-  }
-  p {
-    font-size: 20px;
+    width: 50%;
   }
 `;
 
@@ -45,8 +54,8 @@ const Modal = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1020px;
-  max-height: 600px;
+  width: 1120px;
+  max-height: 760px;
   height: 100%;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.8);
@@ -88,6 +97,11 @@ const Modal = styled.div`
     color: red;
     margin-top: 30px;
   }
+  .use-stack {
+    font-size: 22px;
+    line-height: 24px;
+    color: #7890ad;
+  }
 `;
 
 // const CloseButton = styled.button`
@@ -107,7 +121,7 @@ const PortFoilo = () => {
   const [tubeModal, cbTube] = useState(false);
   const [cocoaModal, cbCocoa] = useState(false);
   const [autoMaskModal, cbAutoMask] = useState(false);
-  const [portDatas, cbPortData] = useState(PortfolioData);
+  const [portDatas] = useState(PortfolioData);
 
   const closeModal = () => {
     cbDev(false);
@@ -123,19 +137,19 @@ const PortFoilo = () => {
         <List>
           <Item onClick={() => cbDev(true)}>
             <h3>DEVFLIX</h3>
-            <p> Click Me !!!!!</p>
+            <p> Cloning Netflix</p>
           </Item>
           <Item onClick={() => cbTube(true)}>
             <h3>GyumTube</h3>
-            <p> Click Me !!!!!</p>
+            <p> Cloning youtube && instagram</p>
           </Item>
           <Item onClick={() => cbCocoa(true)}>
             <h3>CocoaClone</h3>
-            <p> Click Me !!!!!</p>
+            <p> Cloning KakaoTalk</p>
           </Item>
           <Item onClick={() => cbAutoMask(true)}>
             <h3>Auto Mask Checking Bot</h3>
-            <p> Click Me !!!!!</p>
+            <p> Mask checking with Rc && camera</p>
           </Item>
         </List>
         {devModal === true ? (
@@ -159,11 +173,11 @@ const PortModal = ({ data, closeModal }) => (
   <>
     <Modal>
       <button onClick={closeModal}>❌</button>
-      {console.log(data)}
 
       <img alt="" src={data.poster} />
       <h1>{data.title}</h1>
       <p>{data.description}</p>
+      <p className="use-stack">Stack : {data.stack}</p>
       <a href={data.link.website} target="_blank" rel="noreferrer">
         사이트 : {data.link.website} &larr; Click!
       </a>

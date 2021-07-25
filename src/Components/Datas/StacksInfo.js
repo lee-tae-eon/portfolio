@@ -18,7 +18,7 @@ export const StacksInfo = [
     title: "Javsscript",
     logo: "https://d1telmomo28umc.cloudfront.net/media/public/badges/js.png",
     Useful:
-      "ECMAScript6와 Vanilla Js를 활용하며 아직은 기초적인 단계이지만, 더나아가 typescript와 ",
+      "ECMAScript6와 Vanilla Js를 활용하며 아직은 기초적인 단계이지만, 지속적으로 공부 하고 있습니다. ",
   },
   {
     id: 3,
@@ -32,13 +32,13 @@ export const StacksInfo = [
     title: "MongoDB",
     logo: "https://d1telmomo28umc.cloudfront.net/media/public/badges/MongoDB_eI4tP6i.png",
     Useful:
-      "NoSql인 MongoDB를 Mongoose를 사용해 Express로 프레임워크 구축시 활용가능합니다. 현재 진행중인 사이드프로젝트에서 지속적으로 활용하고 있습니다. ",
+      "NoSql인 MongoDB를 Mongoose를 사용해 Express로 프레임워크 구축시 활용가능합니다.",
   },
   {
     id: 5,
     title: "React.js",
     logo: "https://d1telmomo28umc.cloudfront.net/media/public/badges/react_nsNvyE0.png",
-    Useful: "현재 axios를 활용하여 api요청",
+    Useful: "",
   },
   {
     id: 6,
@@ -66,12 +66,18 @@ export const StacksInfo = [
     title: "AWS",
     logo: "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png",
     Useful:
-      "사이드 프로젝트시 파일을 AWS S3 라이브러리를 연동하여 사용했습니다.",
+      "사이드 프로젝트시 파일을 AWS S3 라이브러리를 연동하여 사용해 보았고 활용이 가능합니다.",
   },
   {
     id: 9,
     title: "C",
     useful:
-      "기본서를 습득하였고, 직업전문학원 프로젝트시 아두이노 코드를 작성해보았습니다. ",
+      "기본서를 습득하였고, 직업전문학원 프로젝트시 ARDUINO 제어에 사용했습니다. ",
+  },
+  {
+    id: 10,
+    title: "TypeScript",
+    logo: "https://d1telmomo28umc.cloudfront.net/media/public/badges/typescript.png",
+    useful: "현재 습득 중이며 react와 함께 사용하며 연습중입니다.",
   },
 ];

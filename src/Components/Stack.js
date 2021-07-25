@@ -44,7 +44,7 @@ const Logo = styled.img`
 `;
 
 const Stack = () => {
-  let [Stacks, cbStack] = useState(StacksInfo);
+  let [Stacks] = useState(StacksInfo);
 
   return (
     <>
