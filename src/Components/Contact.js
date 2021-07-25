@@ -62,8 +62,26 @@ const Contact = () => {
         <MyInfo>
           <h3>Lee Tae Eon : 이 태 언</h3>
           <span>Email : mktears0609@gmail.com</span>
-          <span>Github : https://github.com/lee-tae-eon</span>
-          <span>Blog : https://developer-lte.tistory.com/</span>
+          <span>
+            Github :{" "}
+            <a
+              href="https://github.com/lee-tae-eon"
+              target="_blank"
+              rel="noreferrer"
+            >
+              https://github.com/lee-tae-eon
+            </a>
+          </span>
+          <span>
+            Blog :
+            <a
+              href="https://developer-lte.tistory.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              https://developer-lte.tistory.com/
+            </a>
+          </span>
           <span>Phone : +82 10 9749 2060</span>
           <span>Kakao : ltaeeon@gmail.com</span>
         </MyInfo>

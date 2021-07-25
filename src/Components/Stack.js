@@ -48,7 +48,7 @@ const Stack = () => {
 
   return (
     <>
-      <Title>LEETAEEON's Stacks</Title>
+      <Title>LEE TAE EON's Stacks</Title>
       <Container>
         {Stacks.map((stack, index) => {
           return (
