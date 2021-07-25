@@ -38,7 +38,8 @@ export const StacksInfo = [
     id: 5,
     title: "React.js",
     logo: "https://d1telmomo28umc.cloudfront.net/media/public/badges/react_nsNvyE0.png",
-    Useful: "",
+    Useful:
+      "class & function 컴포넌트를 활용하여 프런트엔드 구축이 가능하며, Hook과 Typescript, Redux도 함께 공부하고 있습니다.",
   },
   {
     id: 6,
@@ -71,13 +72,14 @@ export const StacksInfo = [
   {
     id: 9,
     title: "C",
-    useful:
+    logo: "https://w.namu.la/s/94a1932d38d211d6264df6ac3569b697ef4a6a936fb6fa296f65c891a3a311f5d99a8cf7ba891c9370b7c79e2b060044cca244f6f9b2f5a1460f00c67496a58a6fee66a4289f67133007ae4d667832d6c911f0b5db64dac93f5b111fa2fac51e",
+    Useful:
       "기본서를 습득하였고, 직업전문학원 프로젝트시 ARDUINO 제어에 사용했습니다. ",
   },
   {
     id: 10,
     title: "TypeScript",
     logo: "https://d1telmomo28umc.cloudfront.net/media/public/badges/typescript.png",
-    useful: "현재 습득 중이며 react와 함께 사용하며 연습중입니다.",
+    Useful: "현재 습득 중이며 react와 함께 사용하며 연습중입니다.",
   },
 ];

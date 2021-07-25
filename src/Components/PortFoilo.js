@@ -149,7 +149,7 @@ const PortFoilo = () => {
           </Item>
           <Item onClick={() => cbAutoMask(true)}>
             <h3>Auto Mask Checking Bot</h3>
-            <p> Mask checking with Rc && camera</p>
+            <p> Mask checking with AI && Camera</p>
           </Item>
         </List>
         {devModal === true ? (
