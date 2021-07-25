@@ -1,22 +1,14 @@
 import React, { useState } from "react";
 import styled, { css } from "styled-components";
-import TitleNeon from "./animation/TitleNeon";
-import devflixMain from "../static/Image/portfolio/devflixMain.png";
+import PortfolioData from "./Datas/PortfolioData";
+import { GlobalTitle } from "./_Cssvariable";
 
-const PortSection = styled.section``;
+const PortSection = styled.section`
+  position: relative;
+`;
 
 const Title = styled.h1`
-  max-width: 600px;
-  width: 100%;
-  padding: 20px 30px;
-  font-size: 45px;
-  font-weight: bolder;
-  margin: auto;
-  margin-top: 40px;
-  text-align: center;
-  border-radius: 5px;
-  animation: ${TitleNeon} 3s ease infinite;
-  cursor: pointer;
+  ${GlobalTitle}
 `;
 
 const Container = styled.div`
@@ -32,11 +24,18 @@ const List = styled.ul`
 const Item = styled.li`
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-bottom: 50px;
-  font-size: 50px;
+  font-size: 30px;
   cursor: pointer;
   &:hover {
-    font-size: 80px;
+    font-size: 50px;
+  }
+  h3 {
+    width: 300px;
+  }
+  p {
+    font-size: 20px;
   }
 `;
 
@@ -47,6 +46,8 @@ const Modal = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   width: 1020px;
+  max-height: 600px;
+  height: 100%;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -55,17 +56,22 @@ const Modal = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: scroll;
   backdrop-filter: blur(3px);
   button {
     all: unset;
-    position: absolute;
-    right: 0;
-    top: -20px;
+    position: sticky;
+    top: 0;
     cursor: pointer;
+    /* z-index: 999; */
+    font-size: 26px;
   }
   img {
     width: 100%;
+    max-height: 600px;
+    height: 100%;
     border-radius: 5px;
+
     margin-bottom: 20px;
   }
   h1 {
@@ -73,63 +79,99 @@ const Modal = styled.div`
     margin-bottom: 20px;
   }
   p {
+    width: 50%;
+    line-height: 20px;
     margin-bottom: 20px;
+    text-align: center;
   }
   a {
     color: red;
+    margin-top: 30px;
   }
 `;
+
+// const CloseButton = styled.button`
+//   all: unset;
+//   position: absolute;
+//   right: 0;
+//   top: 20px;
+//   cursor: pointer;
+// `;
 
 export const BGBlur = css`
   filter: blur(${(props) => props.current});
 `;
 
 const PortFoilo = () => {
-  const [modal, cbmodal] = useState(false);
+  const [devModal, cbDev] = useState(false);
+  const [tubeModal, cbTube] = useState(false);
+  const [cocoaModal, cbCocoa] = useState(false);
+  const [autoMaskModal, cbAutoMask] = useState(false);
+  const [portDatas, cbPortData] = useState(PortfolioData);
+
+  const closeModal = () => {
+    cbDev(false);
+    cbTube(false);
+    cbCocoa(false);
+    cbAutoMask(false);
+  };
 
   return (
     <PortSection>
       <Title>LEE TAE EON's PORTFOLIO</Title>
-      <Container current={modal === true ? "25px" : null}>
+      <Container>
         <List>
-          <Item onClick={() => cbmodal(true)}>
+          <Item onClick={() => cbDev(true)}>
             <h3>DEVFLIX</h3>
             <p> Click Me !!!!!</p>
           </Item>
-          <Item>
+          <Item onClick={() => cbTube(true)}>
             <h3>GyumTube</h3>
             <p> Click Me !!!!!</p>
           </Item>
-          <Item>
+          <Item onClick={() => cbCocoa(true)}>
             <h3>CocoaClone</h3>
             <p> Click Me !!!!!</p>
           </Item>
-          <Item>
+          <Item onClick={() => cbAutoMask(true)}>
             <h3>Auto Mask Checking Bot</h3>
             <p> Click Me !!!!!</p>
           </Item>
         </List>
-        {modal === true ? <PortModal modal={modal} cbmodal={cbmodal} /> : null}
+        {devModal === true ? (
+          <PortModal data={portDatas[0]} closeModal={closeModal} />
+        ) : null}
+        {tubeModal === true ? (
+          <PortModal data={portDatas[1]} closeModal={closeModal} />
+        ) : null}
+        {cocoaModal === true ? (
+          <PortModal data={portDatas[2]} closeModal={closeModal} />
+        ) : null}
+        {autoMaskModal === true ? (
+          <PortModal data={portDatas[3]} closeModal={closeModal} />
+        ) : null}
       </Container>
     </PortSection>
   );
 };
 
-const PortModal = (props) => (
-  <Modal>
-    {console.log(props)}
-    <button>❌</button>
+const PortModal = ({ data, closeModal }) => (
+  <>
+    <Modal>
+      <button onClick={closeModal}>❌</button>
+      {console.log(data)}
 
-    <img alt="" src={devflixMain} />
-    <h1>DevFlix</h1>
-    <p>
-      Netflix를 clone한 site로 moviedata api를 Ajax방식으로 실시간으로 데이터를
-      가져와 뿌려줌 class components를 사용
-    </p>
-    <a href="https://lee-tae-eon.github.io/devflix/#/" target="_blank">
-      https://lee-tae-eon.github.io/devflix/#/ &larr; Click!
-    </a>
-  </Modal>
+      <img alt="" src={data.poster} />
+      <h1>{data.title}</h1>
+      <p>{data.description}</p>
+      <a href={data.link.website} target="_blank" rel="noreferrer">
+        사이트 : {data.link.website} &larr; Click!
+      </a>
+      <a href={data.link.github} target="_blank" rel="noreferrer">
+        GitHub 주소 : {data.link.github} &larr; Click;
+      </a>
+    </Modal>
+  </>
 );
 
 export default PortFoilo;

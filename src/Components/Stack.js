@@ -1,19 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import TitleNeon from "./animation/TitleNeon";
-import { StacksInfo } from "./Stacks/StacksInfo";
+import { StacksInfo } from "./Datas/StacksInfo";
+import { GlobalTitle } from "./_Cssvariable";
 
 const Title = styled.h1`
-  max-width: 600px;
-  width: 100%;
-  padding: 20px 30px;
-  font-size: 45px;
-  font-weight: bolder;
-  margin: auto;
-  margin-top: 40px;
-  text-align: center;
-  border-radius: 5px;
-  animation: ${TitleNeon} 3s ease infinite;
+  ${GlobalTitle};
 `;
 
 const Container = styled.section`
@@ -33,13 +24,16 @@ const Container = styled.section`
 const StackInfo = styled.div`
   width: 400px;
   justify-self: center;
-  align-self: center;
   margin-top: 50px;
   margin-bottom: 50px;
   h1 {
     font-size: 26px;
     font-weight: 700;
     margin: 20px 0;
+  }
+  p {
+    letter-spacing: 1.2px;
+    line-height: 20px;
   }
 `;
 
@@ -54,7 +48,7 @@ const Stack = () => {
 
   return (
     <>
-      <Title>LeeTaeEon's Stacks</Title>
+      <Title>LEETAEEON's Stacks</Title>
       <Container>
         {Stacks.map((stack, index) => {
           return (

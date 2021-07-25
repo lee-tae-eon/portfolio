@@ -6,6 +6,7 @@ import Header from "./Header";
 import Navigation from "./Nav";
 import Stack from "./Stack";
 import PortFoilo from "./PortFoilo";
+import Contact from "./Contact";
 
 const Hrouter = () => {
   return (
@@ -17,7 +18,7 @@ const Hrouter = () => {
         <Route path="/profile" component={Profile}></Route>
         <Route path="/stack" component={Stack}></Route>
         <Route path="/portfolio" component={PortFoilo}></Route>
-        <Route path="/contact"></Route>
+        <Route path="/contact" component={Contact}></Route>
       </Switch>
     </Router>
   );

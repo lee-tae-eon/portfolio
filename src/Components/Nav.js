@@ -55,7 +55,9 @@ const Navigation = withRouter(({ location: { pathname } }) => {
         <Item current={pathname === "/portfolio"}>
           <PLink to="/portfolio">PORTFOLIO</PLink>
         </Item>
-        <Item>CONTACT</Item>
+        <Item current={pathname === "/contact"}>
+          <PLink to="/contact">CONTACT</PLink>
+        </Item>
       </List>
     </Navbar>
   );

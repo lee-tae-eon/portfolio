@@ -1,18 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import TitleNeon from "./animation/TitleNeon";
+import { GlobalTitle } from "./_Cssvariable";
 
 const Title = styled.h1`
-  max-width: 600px;
-  width: 100%;
-  padding: 20px 30px;
-  font-size: 45px;
-  font-weight: bolder;
-  margin: auto;
-  margin-top: 40px;
-  text-align: center;
-  border-radius: 5px;
-  animation: ${TitleNeon} 3s ease infinite;
+  ${GlobalTitle}
 `;
 const Container = styled.section`
   max-width: 1400px;
