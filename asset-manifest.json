@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/portfoilo/static/js/main.e0d8ee97.chunk.js",
+    "main.js.map": "/portfoilo/static/js/main.e0d8ee97.chunk.js.map",
+    "runtime-main.js": "/portfoilo/static/js/runtime-main.a56a15de.js",
+    "runtime-main.js.map": "/portfoilo/static/js/runtime-main.a56a15de.js.map",
+    "static/js/2.6dc93550.chunk.js": "/portfoilo/static/js/2.6dc93550.chunk.js",
+    "static/js/2.6dc93550.chunk.js.map": "/portfoilo/static/js/2.6dc93550.chunk.js.map",
+    "index.html": "/portfoilo/index.html",
+    "static/js/2.6dc93550.chunk.js.LICENSE.txt": "/portfoilo/static/js/2.6dc93550.chunk.js.LICENSE.txt",
+    "static/media/AutoMask.6a94a017.png": "/portfoilo/static/media/AutoMask.6a94a017.png",
+    "static/media/cocoaClone.647f0844.png": "/portfoilo/static/media/cocoaClone.647f0844.png",
+    "static/media/devflixMain.f741a3f5.png": "/portfoilo/static/media/devflixMain.f741a3f5.png",
+    "static/media/gyumTube2.b1f0a32c.png": "/portfoilo/static/media/gyumTube2.b1f0a32c.png",
+    "static/media/mainBack.422c7232.jpeg": "/portfoilo/static/media/mainBack.422c7232.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a56a15de.js",
+    "static/js/2.6dc93550.chunk.js",
+    "static/js/main.e0d8ee97.chunk.js"
+  ]
+}
