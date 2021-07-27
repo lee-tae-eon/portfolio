@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import TitleNeon from "../../Components/animation/TitleNeon";
 
 const Container = styled.div`
   font-size: 32px;
   max-width: 1000px;
-  margin: auto;
+  margin: 30px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,6 +31,7 @@ const Container = styled.div`
 `;
 
 const HomePresenter = () => {
+  // useEffect();
   return (
     <Container>
       <h1>개발자 이태언은...</h1>

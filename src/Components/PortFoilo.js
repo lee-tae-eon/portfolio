@@ -121,7 +121,7 @@ const PortFoilo = () => {
   const [tubeModal, cbTube] = useState(false);
   const [cocoaModal, cbCocoa] = useState(false);
   const [autoMaskModal, cbAutoMask] = useState(false);
-  const [portDatas] = useState(PortfolioData);
+  const portDatas = useState(PortfolioData)[0];
 
   const closeModal = () => {
     cbDev(false);
