@@ -31,7 +31,6 @@ const Container = styled.div`
 `;
 
 const HomePresenter = () => {
-  // useEffect();
   return (
     <Container>
       <h1>개발자 이태언은...</h1>
