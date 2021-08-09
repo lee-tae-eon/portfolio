@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.5f5f3fcb.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.5f5f3fcb.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.cba2a63e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.cba2a63e.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.bcd5af5a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.bcd5af5a.js.map",
-    "static/js/2.699c34fd.chunk.js": "/portfolio/static/js/2.699c34fd.chunk.js",
-    "static/js/2.699c34fd.chunk.js.map": "/portfolio/static/js/2.699c34fd.chunk.js.map",
+    "static/js/2.73342bf1.chunk.js": "/portfolio/static/js/2.73342bf1.chunk.js",
+    "static/js/2.73342bf1.chunk.js.map": "/portfolio/static/js/2.73342bf1.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/js/2.699c34fd.chunk.js.LICENSE.txt": "/portfolio/static/js/2.699c34fd.chunk.js.LICENSE.txt",
+    "static/js/2.73342bf1.chunk.js.LICENSE.txt": "/portfolio/static/js/2.73342bf1.chunk.js.LICENSE.txt",
     "static/media/AutoMask.6a94a017.png": "/portfolio/static/media/AutoMask.6a94a017.png",
     "static/media/cocoaClone.647f0844.png": "/portfolio/static/media/cocoaClone.647f0844.png",
     "static/media/devflixMain.f741a3f5.png": "/portfolio/static/media/devflixMain.f741a3f5.png",
@@ -16,7 +16,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bcd5af5a.js",
-    "static/js/2.699c34fd.chunk.js",
-    "static/js/main.5f5f3fcb.chunk.js"
+    "static/js/2.73342bf1.chunk.js",
+    "static/js/main.cba2a63e.chunk.js"
   ]
 }
