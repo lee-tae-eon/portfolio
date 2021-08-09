@@ -1500,6 +1500,18 @@
     "@types/yargs" "^16.0.0"
     "chalk" "^4.0.0"
 
+"@leehooks/use-tabs@^1.0.1":
+  "integrity" "sha512-8arSLf130dcvWRX54QZimbDJ5LBOuyoz35ssiWZCXeBr80BECFhYBd8EnqNLwwrxWE+8fXf6/KVomSC0ohN3ug=="
+  "resolved" "https://registry.npmjs.org/@leehooks/use-tabs/-/use-tabs-1.0.1.tgz"
+  "version" "1.0.1"
+  dependencies:
+    "js-tokens" "^4.0.0"
+    "loose-envify" "^1.4.0"
+    "object-assign" "^4.1.1"
+    "react" "^17.0.2"
+    "react-dom" "^17.0.2"
+    "scheduler" "^0.20.2"
+
 "@nodelib/fs.scandir@2.1.5":
   "integrity" "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="
   "resolved" "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"

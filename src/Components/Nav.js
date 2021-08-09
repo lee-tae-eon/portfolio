@@ -10,6 +10,7 @@ const Navbar = styled.nav`
   font-size: 16px;
   font-weight: 800;
   position: sticky;
+  background-color: #131313;
   top: 0;
   ${OswaldFont}
 `;

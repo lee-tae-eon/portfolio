@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled, { css } from "styled-components";
 import PortfolioData from "./Datas/PortfolioData";
 import { GlobalTitle } from "./_Cssvariable";
+import { useTabs } from "@leehooks/use-tabs";
 
 const PortSection = styled.section`
   position: relative;
@@ -80,7 +81,6 @@ const Modal = styled.div`
     max-height: 600px;
     height: 100%;
     border-radius: 5px;
-
     margin-bottom: 20px;
   }
   h1 {
@@ -104,65 +104,40 @@ const Modal = styled.div`
   }
 `;
 
-// const CloseButton = styled.button`
-//   all: unset;
-//   position: absolute;
-//   right: 0;
-//   top: 20px;
-//   cursor: pointer;
-// `;
-
 export const BGBlur = css`
   filter: blur(${(props) => props.current});
 `;
 
 const PortFoilo = () => {
-  const [devModal, cbDev] = useState(false);
-  const [tubeModal, cbTube] = useState(false);
-  const [cocoaModal, cbCocoa] = useState(false);
-  const [autoMaskModal, cbAutoMask] = useState(false);
+  const [modal, setModal] = useState(false);
   const portDatas = useState(PortfolioData)[0];
 
   const closeModal = () => {
-    cbDev(false);
-    cbTube(false);
-    cbCocoa(false);
-    cbAutoMask(false);
+    setModal(false);
   };
+
+  const { currentItem, changeItem } = useTabs(0, portDatas);
 
   return (
     <PortSection>
       <Title>LEE TAE EON's PORTFOLIO</Title>
       <Container>
         <List>
-          <Item onClick={() => cbDev(true)}>
-            <h3>DEVFLIX</h3>
-            <p> Cloning Netflix</p>
-          </Item>
-          <Item onClick={() => cbTube(true)}>
-            <h3>GyumTube</h3>
-            <p> Cloning youtube && instagram</p>
-          </Item>
-          <Item onClick={() => cbCocoa(true)}>
-            <h3>CocoaClone</h3>
-            <p> Cloning KakaoTalk</p>
-          </Item>
-          <Item onClick={() => cbAutoMask(true)}>
-            <h3>Auto Mask Checking Bot</h3>
-            <p> Mask checking with AI && Camera</p>
-          </Item>
+          {portDatas.map((data, index) => (
+            <Item
+              key={data.id}
+              onClick={() => {
+                setModal(true);
+                return changeItem(index);
+              }}
+            >
+              <h3>{data.title}</h3>
+              <p>{data.summary}</p>
+            </Item>
+          ))}
         </List>
-        {devModal === true ? (
-          <PortModal data={portDatas[0]} closeModal={closeModal} />
-        ) : null}
-        {tubeModal === true ? (
-          <PortModal data={portDatas[1]} closeModal={closeModal} />
-        ) : null}
-        {cocoaModal === true ? (
-          <PortModal data={portDatas[2]} closeModal={closeModal} />
-        ) : null}
-        {autoMaskModal === true ? (
-          <PortModal data={portDatas[3]} closeModal={closeModal} />
+        {modal === true ? (
+          <PortModal data={currentItem} closeModal={closeModal} />
         ) : null}
       </Container>
     </PortSection>

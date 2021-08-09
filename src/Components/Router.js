@@ -7,6 +7,7 @@ import Navigation from "./Nav";
 import Stack from "./Stack";
 import PortFoilo from "./PortFoilo";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 const Hrouter = () => {
   return (
@@ -20,6 +21,7 @@ const Hrouter = () => {
         <Route path="/portfolio" component={PortFoilo}></Route>
         <Route path="/contact" component={Contact}></Route>
       </Switch>
+      <Footer />
     </Router>
   );
 };
