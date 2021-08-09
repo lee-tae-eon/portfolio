@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { StacksInfo } from "./Datas/StacksInfo";
-import { GlobalTitle } from "./_Cssvariable";
+import { StacksInfo } from "../../Components/Datas/StacksInfo";
+import { GlobalTitle } from "../../Components/css/_Cssvariable";
 
 const Title = styled.h1`
   ${GlobalTitle};

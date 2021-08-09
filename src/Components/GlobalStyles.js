@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
-import { BgColor, OswaldFont } from "./_Cssvariable";
+import { BgColor, OswaldFont } from "./css/_Cssvariable";
 
 const GlobalStyles = createGlobalStyle`
   ${reset};

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled, { css } from "styled-components";
-import PortfolioData from "./Datas/PortfolioData";
-import { GlobalTitle } from "./_Cssvariable";
+import PortfolioData from "../../Components/Datas/PortfolioData";
+import { GlobalTitle } from "../../Components/css/_Cssvariable";
 import { useTabs } from "@leehooks/use-tabs";
 
 const PortSection = styled.section`
@@ -108,7 +108,7 @@ export const BGBlur = css`
   filter: blur(${(props) => props.current});
 `;
 
-const PortFoilo = () => {
+const PortFolio = () => {
   const [modal, setModal] = useState(false);
   const portDatas = useState(PortfolioData)[0];
 
@@ -163,4 +163,4 @@ const PortModal = ({ data, closeModal }) => (
   </>
 );
 
-export default PortFoilo;
+export default PortFolio;

@@ -1,5 +1,5 @@
 import { css } from "styled-components";
-import TitleNeon from "./animation/TitleNeon";
+import TitleNeon from "../animation/TitleNeon";
 
 export const OswaldFont = css`
   font-family: "Oswald", sans-serif;

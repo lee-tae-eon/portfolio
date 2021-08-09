@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { GlobalTitle } from "./_Cssvariable";
+import { GlobalTitle } from "../../Components/css/_Cssvariable";
 
 const Title = styled.h1`
   ${GlobalTitle}

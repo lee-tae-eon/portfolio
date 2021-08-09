@@ -1,7 +1,7 @@
 import React from "react";
 import GlobalStyles from "./GlobalStyles";
 import Hrouter from "./Router";
-import { BGBlur } from "./PortFoilo";
+import { BGBlur } from "../Routes/PortFolio/PortFolio";
 
 const App = () => {
   return (

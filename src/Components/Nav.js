@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import styled from "styled-components";
-import { OswaldFont } from "./_Cssvariable";
+import { OswaldFont } from "./css/_Cssvariable";
 
 const Navbar = styled.nav`
   width: 100%;
