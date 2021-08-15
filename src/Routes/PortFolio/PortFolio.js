@@ -51,7 +51,7 @@ const Item = styled.li`
 
 const Modal = styled.div`
   position: fixed;
-  z-index: 100;
+  z-index: 50;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

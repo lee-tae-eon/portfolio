@@ -13,6 +13,7 @@ const Navbar = styled.nav`
   background-color: #131313;
   top: 0;
   ${OswaldFont}
+  z-index: 100;
 `;
 
 const List = styled.ul`
@@ -22,7 +23,6 @@ const List = styled.ul`
   align-items: center;
   justify-content: center;
   /* background: linear-gradient(120deg, #262926, #3a404a); */
-
   gap: 2px;
 `;
 
