@@ -21,28 +21,30 @@ const Foot = styled.footer`
   }
 `;
 
-const Footer = () => (
-  <Foot>
-    <hr />
-    <span>&copy; 2021 ~ 2021 Made by Lee Tae Eon</span>
-    <span>CALL : 010 - 9749 - 2060</span>
-    <a
-      href="https://github.com/lee-tae-eon?tab=repositories"
-      target="_blank"
-      rel="noreferrer"
-    >
-      {" "}
-      GitHub{" "}
-    </a>
-    <a
-      href="https://www.tistory.com/member/blog"
-      target="_blank"
-      rel="noreferrer"
-    >
-      {" "}
-      Blog{" "}
-    </a>
-  </Foot>
-);
+const Footer = () => {
+  return (
+    <Foot>
+      <hr />
+      <span>&copy; 2021 ~ {new Date().getFullYear()}</span>
+      <span>CALL : 010 - 9749 - 2060</span>
+      <a
+        href="https://github.com/lee-tae-eon?tab=repositories"
+        target="_blank"
+        rel="noreferrer"
+      >
+        {" "}
+        GitHub{" "}
+      </a>
+      <a
+        href="https://www.tistory.com/member/blog"
+        target="_blank"
+        rel="noreferrer"
+      >
+        {" "}
+        Blog{" "}
+      </a>
+    </Foot>
+  );
+};
 
 export default Footer;
